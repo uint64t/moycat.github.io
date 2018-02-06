@@ -19,7 +19,7 @@
         margin-left: 2%;
         width: 60px;
         height: $g-header-h;
-        background: url('../icons/logo.svg') no-repeat center;
+        background: url('../icons/logo.png') no-repeat center;
         background-size: 100% 100%;
         opacity: .8;
         transition: all .2s;
@@ -112,12 +112,11 @@
     }
     h2 {
         padding-top: 190px;
-        line-height: 38px;
-        font-size: 42px;
+        font-size: 72px;
         font-family: 'Arial', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
         font-weight: bold;
         letter-spacing: 2px;
-        line-height: 52px;
+        line-height: 80px;
     }
     h3 {
         font-size: 20px;
