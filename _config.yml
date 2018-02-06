@@ -15,30 +15,93 @@
 # in the templates via {{ site.myvariable }}.
 title: 末影随想
 email: moycatus@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   沙上并禽池上暝 云破月来花弄影
+keyword: >-
+  moycat, blog, 博客, 随想
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  moycat
 timezone: Asia/Shanghai
 
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2017
+
+# Author
+author: 'Moycat'
+bio: 'You''ll always be luck if you know how to make friends with strange cats.'
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+livere: false
+livere_uid: MTAyMC8yODEwMC80Njcz
+
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: false
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
+  alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
+
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# Theme Color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  email: 'mailto:moycatus@gmail.com'
+  github: '//github.com/moycat'
+  instagram: '//www.instagram.com/moycatus'
+  zhihu: '//www.zhihu.com/people/moycat'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md', '.idea']
+
+# RSS
+RSS: true
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
 # Build settings
 markdown: kramdown
-theme: minima
+highlighter: rouge
+kramdown:
+  input: GFM
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Deployment
 host: 0.0.0.0
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
