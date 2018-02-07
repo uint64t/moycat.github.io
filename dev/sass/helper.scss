@@ -72,8 +72,8 @@ $post-content-w: 720px;
     text-align: center;
     
     .avatar {
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         margin: 0 auto;
         overflow: hidden;
@@ -84,15 +84,15 @@ $post-content-w: 720px;
     }
     .author-name {
         width: 100%;
-        font-size: 16px;
+        font-size: 26px;
         color: $color-f-primary;
         font-weight: 500;
-        margin: 12px 0 6px;
+        margin: 8px 0 10px;
     }
     .bio {
         p {
             font-size: 14px;
-            line-height: 20px;
+            line-height: 24px;
         }
     }
 

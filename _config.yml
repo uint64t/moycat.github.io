@@ -28,6 +28,7 @@ timezone: Asia/Shanghai
 nav:
   home: '/'
   tags: '/tags.html'
+  about: '/about.html'
 
 # Footer
 footer:
@@ -63,7 +64,7 @@ b2t: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['qq', 'qzone', 'wechat', 'weibo', 'twitter']
 
 # Theme Color 主题皮肤
 theme-color: 'default'  # pink or default

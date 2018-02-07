@@ -151,7 +151,7 @@ a {
   .home-banner .header-img {
     display: block;
     position: absolute;
-    top: 0;
+    top: -50%;
     left: 0;
     width: 101%;
     z-index: 0; }
@@ -257,8 +257,8 @@ a {
 .author-card {
   text-align: center; }
   .author-card .avatar {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto;
     overflow: hidden;
@@ -267,13 +267,13 @@ a {
       width: 100%; }
   .author-card .author-name {
     width: 100%;
-    font-size: 16px;
+    font-size: 26px;
     color: #4E4E4E;
     font-weight: 500;
-    margin: 12px 0 6px; }
+    margin: 8px 0 10px; }
   .author-card .bio p {
     font-size: 14px;
-    line-height: 20px; }
+    line-height: 24px; }
   .author-card .sns-links {
     margin-top: 14px;
     cursor: default; }
