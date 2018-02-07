@@ -300,7 +300,7 @@
         max-height: 230px;
         background-color: #fff;
         border-radius: 0 0 4px 4px;
-        overflow: scroll;
+        overflow: auto;
         z-index: 0;
     }
     .search_item {
@@ -545,7 +545,7 @@
     padding: 0 0 32px;
     .highlight {
         margin: 0 0 16px;
-        overflow: scroll;
+        overflow: auto;
     }
     img {
         transition: .3s;
