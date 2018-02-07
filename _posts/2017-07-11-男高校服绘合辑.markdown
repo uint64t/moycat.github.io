@@ -1,0 +1,32 @@
+---
+layout: post
+title: 男高校服绘 合辑（0x0005-0x0006）
+cover: /upload/2017/moy0x0005-pid29566611-fixed.png
+date: 2017-07-11 00:25
+categories: 落叶集
+tags: [校服绘, 作品]
+---
+其实是先完成的0x0006，后发的0x0005，因为难度不是一个数量级的……
+
+因此，0x0005成了跨越高考的作品。
+
+## 0x0005 午后·无题
+
+![午后·无题][1]
+
+ > 钓球·春&雪『午後』
+ >
+ > [原图Pixiv ID：29566611][2]
+
+## 0x0006 泣かないで·无题
+
+![泣かないで·无题][3]
+
+ > 战勇。· 罗斯&阿鲁巴『泣かないで』』
+ >
+ > [原图Pixiv ID：26178302][4]
+
+  [1]: /upload/2017/moy0x0005-pid29566611-fixed.png
+  [2]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=29566611
+  [3]: /upload/2017/moy0x0006-pid34123664.png
+  [4]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=26178302

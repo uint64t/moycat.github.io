@@ -1,0 +1,36 @@
+---
+layout: post
+title: 网桥斗争
+date: 2017-06-17 14:13
+categories: IT杂记
+tags: Linux PVE Softether 网络
+---
+暑假重建猫房网络，自然想把整件事弄好一点。于是主服务器斗胆上了 Proxmox VE，因为它的 LXC+KVM 双虚拟环境真的很爽的样子……其他事务基本停当以后，开始折腾 VPN。双重远程桌面我是真·受不了了。
+
+VPN 软件，依然是老牌 Softether VPN，那叫一个舒爽。服务器，为了效率当然是 PVE 的 LXC 容器。可是两个舒爽的东西放在一起，生成了一坨翔：Softether 在 Linux 下的网桥速率低得可怕。
+
+嗯，我也不知道为啥这样，它就是这么坑：Softether 服务端放在 Linux 上，客户端连外网的下行速率简直可怕。上行正常，VPN 客户端之间正常，只要是经过了网桥的下行流量就无比糟心：100Kbps-1Mbps……再怎么，Softether 服务端跑在 Windows 时，我家客户端的正常速率也有 30Mbps 吧…
+
+以往一直是开个 Windows 虚拟机搞定，但为了 LXC 那效率，我就是要死磕它！
+
+照例，Google。没有解决方法，只有一群人为着这相同的问题哀嚎，除了让我觉得自己不是唯一一个之外没有卵用。看他们猜测的原因，什么 L2 loop，ISP 作梗，都是在猜。
+
+DEBUG！客户端本地的 Wireshark 告诉我TCP有大量乱序、重发包，看源和目标 MAC 地址并没有二层环。正准备在 Linux 服务器上抓包一看究竟，时不我与，Windows 的 Wireshark 连 Linux 远程抓包一连就崩溃。没兴趣用 tcpdump 这种不是它 zz 就是把我弄成 zz 的工具（其实就是不会用），于是另寻他法。
+
+接下来就开始发呆。直到我看到网桥设置里除了直接桥接到物理适配器，还有一个新建 tap 设备来桥接。
+
+tap 设备什么鬼，一搜，哦虚拟网卡。
+
+接下来我灵机一动，**设置了一个 tap 设备，把客户端桥接了上去，然后用 Linux 原生的 bridge 把它和物理网卡再桥接起来**，它 mmp 好了。
+
+看来是它自带的桥接的实现有毒啊。本来准备 debug 一下，看到源代码睡觉意识到自己功力不够。算了，能用就行。
+
+……当然哪有上面说的那么简单，虽然思路的确如此。
+
+首先是 tap 设备需要内核的 tun 模块，而 LXC 作为容器，和 OpenVZ 一个德行，内核从宿主机。参照了[这篇文章][1]上的步骤才弄好。
+
+然后是丧病的启动顺序问题……网桥在 /etc/interfaces 里设置，networking 服务里启动。vpn 服务端的启动我放在 /etc/rc.local 里，rc.local 服务启动。而 rc.local 服务在 networking 服务之后启动，tap 设备又是在 vpn 服务端启动后才建立，所以网桥总是不能自动把 tap 设备加进去……这个我在 rc.local 里 vpn 服务端启动后 sleep 5 秒调用系统修改网桥的命令才解决。略丑陋。
+
+不管了……反正 vpn 一切正常了。话说 Softether 没出新版本快一年了，不知有何问题……
+
+  [1]: https://blog.felixbrucker.com/2015/10/01/how-to-enable-tuntap-inside-lxc/

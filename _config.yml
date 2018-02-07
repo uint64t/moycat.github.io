@@ -31,11 +31,11 @@ nav:
 
 # Footer
 footer:
-  since: 2017
+  since: 2012
 
 # Author
 author: 'Moycat'
-bio: 'You''ll always be luck if you know how to make friends with strange cats.'
+bio: '但愿人生长如此<br>春江万里月长明'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -102,6 +102,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Deployment
 host: 0.0.0.0

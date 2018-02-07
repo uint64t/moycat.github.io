@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "男高校服绘 合辑（0x0001-0x0004）"
+cover: '/upload/2017/moy0x0001-pid26765672.png'
+date:   2017-02-14 21:58:53 +0800
+categories: 落叶集
+tags: 校服绘 作品
+---
+前三个是去年的作品，第四个是三个月前开坑，今天填完的……
+
+好不容易生病在家（咦？），总算有时间填坑了。
+
+## 0x0001 沉与落
+
+![沉与落][1]
+
+ > 【沉与落】钓球·真田雪 『真田』
+ >
+ > [原图Pixiv ID：26765672][2]
+
+## 0x0002 暖以我怀
+
+![暖以我怀][3]
+
+ > 【冬寒渐至，午阳微斜。 慰以君意，暖以我怀。 】黑塔利亚·米英 『アサノヒカリ』
+ >
+ > [原图Pixiv ID：3876932【腐】][4]
+
+## 0x0003 浴火
+
+![浴火][5]
+
+ > 【浴火】暗杀教室·赤羽業 『暗殺ログ2』
+ >
+ > [原图Pixiv ID：49406430][6]
+
+## 0x0004 行刑
+
+![行刑][7]
+
+ > 【行刑】爱杀宝贝·安奈&amp;索尼娅 『COOL J』
+ >
+ > [原图Pixiv ID：26178302][8]
+
+  [1]: /upload/2017/moy0x0001-pid26765672.png
+  [2]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=26765672
+  [3]: /upload/2017/moy0x0002-pid3876932.png
+  [4]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=3876932
+  [5]: /upload/2017/moy0x0003-pid49406430.png
+  [6]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=49406430
+  [7]: /upload/2017/moy0x0004-pid26178302.png
+  [8]: https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=26178302

@@ -1,0 +1,62 @@
+---
+layout: post
+title: 'WHAT IF: 电力捕鲸'
+date: 2017-07-10 21:22
+categories: 落叶集
+tags: [WHAT-IF, 翻译, 作品]
+---
+ > 我曾在一家渔场工作，在那里我们会用一种电鱼背包来把鱼（体长 30~100 毫米的）瞬间电晕，这样我们就能把鱼舀起来辨识。大些的鱼似乎会晕得久些，因为它们的表面积更大，但我不知道这一规律对于非常庞大的动物是否依然适用。可以用电鱼的方式来捕鲸吗？需要多大电压？
+ >
+ > —Madeline Cooper
+
+所以你是想给濒危的鲸鱼一点强力的电♂刺♂激？好耶！乐意帮忙，你的想法一点也不清奇。
+
+电鱼的方式多种多样，但都基于同一个原理：一条电流穿过了水，也穿过了碰巧在那片水域的倒霉鱼，然后电流通过几种不同的效应把鱼吸向电流一极，并且/或者电晕它们。
+
+![1]
+
+在过去的很长时间，人们完全不知道电鱼会对鱼造成伤害，尤其因为被电晕的鱼在几分钟后又生动活泼了起来。但实际上它们受了内伤，只是从外表看不出来——电流会导致不随意肌的抽搐，这可能让鱼类脊椎骨折。正如[这篇论文][2]所言，这类脊柱损伤在大型鱼类中更为普遍也更为严重。
+
+如你所说，在电鱼活动中大鱼受到的影响常常比小鱼更严重。为啥？好吧，我们也不知道。在一项2003年的综合性研究《Immobilization Thresholds of Electrofishing Relative to Fish Size》中，生物学家 Chad Dolan 和 Steve Miranda 对电击不同体型的鱼致昏迷进行了建模，但是“没能建立起一个合理的模型阐明鱼类体型大小与电场强度阈值之间的关系”。
+
+上述研究都没有处理体型哪怕稍微接近鲸鱼的动物，Dolan 与 Miranda 在研究中用到的最大的鱼也很小。[这项研究][3]则测试了最长80厘米的鱼，但也远不及鲸鱼的尺寸。何况我们也不清楚大鱼与小鱼为何反应不同，因此很难做出可信的推测。
+
+鱼[通常][4]会被水中每立方厘米 100 µw 功率的电流击晕，所以对于一头鲸鱼来说，大概需要两千万瓦特的功率。
+
+但这有一条隐含条件：绝大部分的电力捕鱼是在淡水中进行的。不幸的是，蓝鲸生活在海洋里，而盐水的导电能力更强。乍看这是件好事，但实际上会让“电鲸”变得更加困难。
+
+电鱼的最佳条件是水与鱼的电导率大致相同。在高电导率的盐水中，绝大部分的电流会从动物身旁绕道，而不会穿过动物本身。也就是说，在大海中电鱼需要大得多的功率。通过我们的简单外推，“电鲸”需要的实际功率约是十亿瓦特，而非淡水中需要的两千万瓦特。换言之，你可能需要带上一座核电站。
+
+![5]
+
+不过简单外推在这里是具有误导性的，因为我们已经知道大型动物对电流的反应并不相同。有啥不同？呃，根据 Jan Dean [发布在 electrofishing.net 上的一篇帖子][6]，一个掉进正在电鱼的水域的人很容易挂掉。而比人类大得多得多的蓝鲸，下场可能会凄惨得多。
+
+![7]
+
+电鱼会[导致鱼类的心脏停跳][8]，事后大多数鱼看上去会恢复正常，但人类——更别说鲸鱼——就很难挺过这段心脏停搏期了。
+
+大概电力捕鲸这个主意并没最开始看上去那么好吧。
+
+也不是说电刺激大型水生动物在科学领域毫无用武之地。丹佛野生动物研究中心（Denver Wildlife Research Center）的[一个项目][9]就用上了一种类似电鱼设备、连着红外摄像机的装置来驱逐部分区域的河狸、鸭子和鹅。可想而知，这个项目成果斐然。
+
+所以电鱼设备或许不能帮你捕捉鲸鱼，但要是有鲸鱼入侵了你家后院的池塘……
+
+![10]
+
+……大概丹佛野生动物研究中心能够助你一臂之力。
+
+----------------------
+
+Moycat via [xkcd][11]
+
+  [1]: /upload/2017/setup.png
+  [2]: http://opensample.info/effect-of-electrofishing-pulse-shape-and-electrofishing-induced-spinal-injury-on-long-term-growth-and-survival-of-wild-rainbow-trout
+  [3]: http://electrofishing.net/2016/01/23/535/
+  [4]: https://nctc.fws.gov/courses/CSP/CSP2C01/resources/5-Power-Transfer-Theory-Standardization/2_Electrofishing,%20A%20Power%20Related%20Phenomenon.pdf
+  [5]: /upload/2017/boat.png
+  [6]: http://electrofishing.net/2015/12/30/man-overboard/
+  [7]: /upload/2017/arrest.png
+  [8]: https://eurekamag.com/pdf.php?pdf=004141382
+  [9]: https://www.aphis.usda.gov/wildlife_damage/nwrc/symposia/repellents_symposium/pdfs/kolz.pdf
+  [10]: /upload/2017/pond.png
+  [11]: https://what-if.xkcd.com/156/
