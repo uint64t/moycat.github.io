@@ -978,7 +978,8 @@ a {
       letter-spacing: 6px; }
     .home-banner .header-img {
       width: 695px;
-      left: -100px; }
+      left: -100px;
+      top: 0; }
   .home-content {
     margin-bottom: 32px; }
   .article-list .article-item {
