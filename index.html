@@ -37,7 +37,7 @@ header-img: /assets/img/hero.jpg
                     <div class="post-tags">
                         {% if post.tags.size > 0 %}
                             {% for tag in post.tags  %}
-                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
+                            <a href={{ "/tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
@@ -81,7 +81,7 @@ header-img: /assets/img/hero.jpg
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
                     {% endif %}
-                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
+                    <a href="{{ "/tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
                 {% endfor %}
             </section>
             {% endif %}
