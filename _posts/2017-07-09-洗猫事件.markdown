@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 洗猫事件
+cover: /upload/2017/IMG_20170709_153510.jpg
 date: 2017-07-09 17:52
 categories: 莫名集
 tags: 猫
